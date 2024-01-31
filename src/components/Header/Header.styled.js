@@ -35,15 +35,6 @@ export const SiteNavItem = styled.li`
   }
 `;
 
-export const ContactList = styled.ul`
-  display: flex;
-  margin-left: auto;
-`;
-
-export const ContactItem = styled.li`
-  margin-left: 50px;
-`;
-
 export const LogoLabel = styled.span`
   color: var(--accent);
 `;
@@ -108,4 +99,34 @@ export const StudioLink = styled(NavLink)`
       bottom: -1px;
     }
   }
+`;
+
+// contacts
+export const ContactList = styled.ul`
+  display: flex;
+  margin-left: auto;
+`;
+
+export const ContactItem = styled.li`
+  margin-left: 50px;
+  margin-right: 10px;
+  list-style: none;
+`;
+
+export const ContactLink = styled.a`
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
 `;

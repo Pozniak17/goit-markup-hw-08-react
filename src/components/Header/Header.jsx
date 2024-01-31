@@ -1,6 +1,10 @@
+import { FaRegEnvelope } from 'react-icons/fa6';
+import { IoPhonePortraitOutline } from 'react-icons/io5';
+
 import { Routes, Route, NavLink } from 'react-router-dom';
 import {
   ContactItem,
+  ContactLink,
   ContactList,
   LogoLabel,
   NavWrapper,
@@ -40,21 +44,20 @@ export const Header = () => {
         {/* секція конатктів */}
         <ContactList>
           <ContactItem>
-            {/* <a href="mailto:info@devstudio.com" class="contact__link">
-              <svg class="contact__icon" width="16" height="12px">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
+            <ContactLink href="mailto:info@devstudio.com">
+              <FaRegEnvelope width="16" height="12px"></FaRegEnvelope>
               info@devstudio.com
-            </a> */}
+            </ContactLink>
           </ContactItem>
 
           <ContactItem>
-            {/* <a href="tel:+380961111111" class="contact__link">
-              <svg class="contact__icon" width="10" height="16">
-                <use href="./images/sprite.svg#icon-telephone"></use>
-              </svg>
+            <ContactLink href="tel:+380961111111">
+              <IoPhonePortraitOutline
+                width="10"
+                height="16"
+              ></IoPhonePortraitOutline>
               +38 096 111 11 11
-            </a> */}
+            </ContactLink>
           </ContactItem>
         </ContactList>
 
